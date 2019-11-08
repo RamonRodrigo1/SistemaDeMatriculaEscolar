@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author PC - Renan
+ * @author 
  */
 public class SistemaDeMatriculaEscolar extends Application {
     

@@ -1,14 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadematriculaescolar.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadematriculaescolar.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Button fx:id="button" layoutX="1181.0" layoutY="669.0" onAction="#handleButtonAction" text="Click Me!" />
+      <ScrollPane layoutX="14.0" layoutY="73.0" prefHeight="580.0" prefWidth="1251.0">
+        <content>
+          <AnchorPane accessibleRole="BUTTON" minHeight="0.0" minWidth="0.0" prefHeight="765.0" prefWidth="1243.0">
+               <children>
+                  <Label fx:id="lblNome" layoutX="28.0" layoutY="15.0" minHeight="16.0" minWidth="69" prefHeight="17.0" prefWidth="113.0" text="Nome Completo:" />
+                  <DatePicker fx:id="dateDataNacimento" layoutX="607.0" layoutY="41.0" />
+                  <TextField fx:id="txtNome" layoutX="28.0" layoutY="40.0" prefHeight="25.0" prefWidth="553.0" />
+                  <Label fx:id="lblDataNacimento" layoutX="607.0" layoutY="15.0" text="Data de Nacimento:" />
+                  <Label fx:id="lblCpf" layoutX="652.0" layoutY="78.0" text="CPF:" />
+                  <TextField fx:id="txtCpf" layoutX="652.0" layoutY="105.0" prefHeight="25.0" prefWidth="183.0" />
+                  <ChoiceBox fx:id="choiceSexo" layoutX="807.0" layoutY="40.0" prefHeight="25.0" prefWidth="113.0" />
+                  <Label fx:id="lblSexo" layoutX="807.0" layoutY="14.0" text="Sexo:" />
+                  <Label fx:id="lblRg" layoutX="29.0" layoutY="78.0" text="RG:" />
+                  <TextField fx:id="txtRg" layoutX="28.0" layoutY="104.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblOrExped" layoutX="237.0" layoutY="78.0" text="Órgão Expedidor:" />
+                  <TextField fx:id="txtOrExped" layoutX="237.0" layoutY="105.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblDataExped" layoutX="445.0" layoutY="79.0" text="Data da Expedição:" />
+                  <TextField fx:id="txtDataExped" layoutX="445.0" layoutY="106.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblNomeMae" layoutX="28.0" layoutY="142.0" minHeight="16.0" minWidth="69" prefHeight="17.0" prefWidth="113.0" text="Nome da Mãe:" />
+                  <TextField fx:id="txtNomeMae" layoutX="28.0" layoutY="168.0" prefHeight="25.0" prefWidth="553.0" />
+                  <Label fx:id="lblProfisaoMae" layoutX="28.0" layoutY="205.0" text="Profisão:" />
+                  <TextField fx:id="txtProfisaoMae" layoutX="28.0" layoutY="232.0" prefHeight="25.0" prefWidth="234.0" />
+                  <Label fx:id="lblTelefoneMae" layoutX="284.0" layoutY="206.0" text="Telefone:" />
+                  <TextField fx:id="txtTelefoneMae" layoutX="284.0" layoutY="233.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblCelularMae1" layoutX="490.0" layoutY="206.0" text="Celular1:" />
+                  <TextField fx:id="txtCelularMae1" layoutX="490.0" layoutY="233.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblCelularMae2" layoutX="700.0" layoutY="206.0" text="Celular 2:" />
+                  <TextField fx:id="txtCelularMae2" layoutX="700.0" layoutY="233.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblNomePai" layoutX="28.0" layoutY="269.0" minHeight="16.0" minWidth="69" prefHeight="17.0" prefWidth="113.0" text="Nome da Pai:" />
+                  <TextField fx:id="txtNomePai" layoutX="28.0" layoutY="296.0" prefHeight="25.0" prefWidth="553.0" />
+                  <Label fx:id="lblProfisaoPai" layoutX="28.0" layoutY="333.0" text="Profisão:" />
+                  <TextField fx:id="txtProfisaoPai" layoutX="28.0" layoutY="360.0" prefHeight="25.0" prefWidth="234.0" />
+                  <Label fx:id="lblTelefonePai" layoutX="284.0" layoutY="334.0" text="Telefone:" />
+                  <TextField fx:id="txtTelefonePai" layoutX="284.0" layoutY="361.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblCelularPai1" layoutX="490.0" layoutY="334.0" text="Celular1:" />
+                  <TextField fx:id="txtCelularPai1" layoutX="490.0" layoutY="361.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblCelularPai2" layoutX="700.0" layoutY="334.0" text="Celular1:" />
+                  <TextField fx:id="txtCelularPai2" layoutX="700.0" layoutY="361.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblNomeResp" layoutX="28.0" layoutY="400.0" minHeight="16.0" minWidth="69" prefHeight="17.0" prefWidth="126.0" text="Nome da Responsável:" />
+                  <TextField fx:id="txtNomeResp" layoutX="28.0" layoutY="427.0" prefHeight="25.0" prefWidth="553.0" />
+                  <Label fx:id="lblParent" layoutX="609.0" layoutY="400.0" text="Parentesco:" />
+                  <TextField fx:id="txtParentesco" layoutX="609.0" layoutY="427.0" prefHeight="25.0" prefWidth="183.0" />
+                  <Label fx:id="lblEndereco" layoutX="29.0" layoutY="465.0" text="Endereço:" />
+                  <TextField fx:id="txtEndereco" layoutX="29.0" layoutY="496.0" prefHeight="25.0" prefWidth="592.0" />
+                  <Label fx:id="lblNumero" layoutX="652.0" layoutY="465.0" text="Nº:" />
+                  <TextField fx:id="txtNumero" layoutX="649.0" layoutY="496.0" prefHeight="25.0" prefWidth="80.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
     </children>
 </AnchorPane>
